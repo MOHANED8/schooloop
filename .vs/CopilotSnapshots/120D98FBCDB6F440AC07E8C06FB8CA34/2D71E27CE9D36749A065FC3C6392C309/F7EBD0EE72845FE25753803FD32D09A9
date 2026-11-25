@@ -1,0 +1,37 @@
+﻿#pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student
+{
+private:
+	string studentId;
+	string name;
+	float grade;
+
+public:
+	void setStudentId(string id)
+	{
+		studentId = id;
+	}
+
+	void setName(string n)
+	{
+		name = n;
+	}
+
+	void setGrade(float g)
+	{
+		grade = g;
+	}
+
+	void increaseGrade(Student* student, float amount)
+	{
+		grade += amount;
+	}
+
+
+
+};
+
